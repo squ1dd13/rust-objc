@@ -125,6 +125,7 @@ extern {
 
     pub fn method_getName(method: *const Method) -> Sel;
     pub fn method_getImplementation(method: *const Method) -> Imp;
+    pub fn method_getTypeEncoding(method: *const Method) -> *const c_char;
     pub fn method_copyReturnType(method: *const Method) -> *mut c_char;
     pub fn method_copyArgumentType(method: *const Method, index: c_uint) -> *mut c_char;
     pub fn method_getNumberOfArguments(method: *const Method) -> c_uint;
