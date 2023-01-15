@@ -103,6 +103,7 @@ extern {
     pub fn objc_getClassList(buffer: *mut *const Class, bufferLen: c_int) -> c_int;
     pub fn objc_copyClassList(outCount: *mut c_uint) -> *mut *const Class;
     pub fn objc_getClass(name: *const c_char) -> *const Class;
+    pub fn objc_getMetaClass(name: *const c_char) -> *const Class;
     pub fn objc_getProtocol(name: *const c_char) -> *const Protocol;
     pub fn objc_copyProtocolList(outCount: *mut c_uint) -> *mut *const Protocol;
     pub fn objc_allocateProtocol(name: *const c_char) -> *mut Protocol;
